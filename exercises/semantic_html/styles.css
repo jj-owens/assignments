@@ -1,0 +1,29 @@
+.snail1, .snail2, .snail3, .snail4, .snail5, .snail6 {
+    display: inline-block;
+    height: 300px;
+    width: 400px;
+    position: static;
+    
+}
+header {
+    color: white;
+    letter-spacing: 5px;
+    font-size: 55px;
+    font-family: serif;
+    text-align: center;
+    background-color: #759DD0;
+}
+footer {
+    color: white;
+    background-color: #493F38;
+    opacity: 30%;
+    
+}
+main {
+    color: black;
+    line-height: 2;
+    text-align: center;
+    font-family: Bakerville, Georgia,;
+    background-color: #D2C3B2;
+    padding: 20px 10px 10px 10px;
+}
