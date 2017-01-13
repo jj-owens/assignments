@@ -1,9 +1,7 @@
-var num = 0;
 for (var i = 0; i <= 101; i++) {
-    console.log(num + i);
-    if ((num + i) % 2 == 0) {
-        console.log("Even");
+    if ((i) % 2 == 0) {
+        console.log(i + " Even");
     } else {
-        console.log("Odd");
+        console.log(i + " Odd");
     }
 }
