@@ -6,9 +6,9 @@ function sing(lyrics) {
     console.log(string);
 };
 
-function sing(lyrics) {
+function singBackwards(lyrics) {
     var string = ""
-    for (var i = 0; i < lyrics.length; i++) {
+    for (var i = lyrics.length - 1; i >= 0; i--) {
         string += lyrics[i] + " ";
     }
     console.log(string);
@@ -48,7 +48,7 @@ sing(["This", "hit", "that", "ice", "cold",
               "with", "Saint", "Laurent", "Gotta", "kiss",
               "myself", "I'm", "so", "pretty"]);
 
-/*singBackwards(["This", "hit", "that", "ice", "cold",
+singBackwards(["This", "hit", "that", "ice", "cold",
               "Michelle", "Pfeiffer", "that", "white",
               "gold", "This", "one", "for", "them",
               "hood", "girls", "Them", "good", "girls",
@@ -58,7 +58,7 @@ sing(["This", "hit", "that", "ice", "cold",
               "with", "Saint", "Laurent", "Gotta", "kiss",
               "myself", "I'm", "so", "pretty"]);
 
-badPerformance(["This", "hit", "that", "ice", "cold",
+/*badPerformance(["This", "hit", "that", "ice", "cold",
               "Michelle", "Pfeiffer", "that", "white",
               "gold", "This", "one", "for", "them",
               "hood", "girls", "Them", "good", "girls",
