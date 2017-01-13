@@ -1,9 +1,27 @@
 function sing(lyrics) {
-    var string = lyrics.join(" ");
+    var string = ""
+    for (var i = 0; i < lyrics.length; i++) {
+        string += lyrics[i] + " ";
+    }
+    console.log(string);
+};
+
+function sing(lyrics) {
+    var string = ""
+    for (var i = 0; i < lyrics.length; i++) {
+        string += lyrics[i] + " ";
+    }
     console.log(string);
 };
 
 
+
+
+
+
+
+
+/*
 function singBackwards(lyrics) {
     var string2 = lyrics.reverse().join(" ");
     console.log(string2);
@@ -17,9 +35,10 @@ function badPerformance(lyrics) {
     console.log(newStr);
 }
 
+*/
 
 
-/*sing(["This", "hit", "that", "ice", "cold",
+sing(["This", "hit", "that", "ice", "cold",
               "Michelle", "Pfeiffer", "that", "white",
               "gold", "This", "one", "for", "them",
               "hood", "girls", "Them", "good", "girls",
@@ -29,7 +48,7 @@ function badPerformance(lyrics) {
               "with", "Saint", "Laurent", "Gotta", "kiss",
               "myself", "I'm", "so", "pretty"]);
 
-singBackwards(["This", "hit", "that", "ice", "cold",
+/*singBackwards(["This", "hit", "that", "ice", "cold",
               "Michelle", "Pfeiffer", "that", "white",
               "gold", "This", "one", "for", "them",
               "hood", "girls", "Them", "good", "girls",
@@ -37,7 +56,7 @@ singBackwards(["This", "hit", "that", "ice", "cold",
               "whilen'", "livin'", "it", "up", "in",
               "the", "city", "Got", "Chucks", "on",
               "with", "Saint", "Laurent", "Gotta", "kiss",
-              "myself", "I'm", "so", "pretty"]);*/
+              "myself", "I'm", "so", "pretty"]);
 
 badPerformance(["This", "hit", "that", "ice", "cold",
               "Michelle", "Pfeiffer", "that", "white",
@@ -47,4 +66,4 @@ badPerformance(["This", "hit", "that", "ice", "cold",
               "whilen'", "livin'", "it", "up", "in",
               "the", "city", "Got", "Chucks", "on",
               "with", "Saint", "Laurent", "Gotta", "kiss",
-              "myself", "I'm", "so", "pretty"]);
+              "myself", "I'm", "so", "pretty"]);*/
