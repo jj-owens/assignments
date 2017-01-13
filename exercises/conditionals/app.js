@@ -24,3 +24,17 @@ function monkeyBusiness(aSmile, bSmile) {
 monkeyBusiness(true, true)
 monkeyBusiness(false, false)
 monkeyBusiness(true, false)
+
+
+function greeting() {
+    var today = new Date();
+    if (today.getHours() < 12) {
+        console.log("Good Morning!")
+    } else if (today.getHours() > 12 && today.getHours() < 5) {
+        console.log("Good Afternoon");
+    } else if (today.getHours() > 5) {
+        console.log("Good Evening!");
+    }
+}
+
+greeting();
