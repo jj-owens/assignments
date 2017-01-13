@@ -26,4 +26,4 @@ function noDupes(string) {
 
 }
 
-noDupes("bookkeeper larry");
+noDupes("This above all: to thine own self be true.");
