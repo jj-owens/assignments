@@ -2,4 +2,13 @@ body {
     background-image: url("background1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 0% -150%;
+    margin: 0px;
+}
+
+header {
+    margin-top: none;
+    padding-top: none;
+    height: 250px;
+    background-color: black;
 }
