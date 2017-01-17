@@ -20,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link href="css/grayscale.min.css" rel="stylesheet">
+    <link href="css/grayscale.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -56,7 +56,7 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download">Capture Pricing</a>
+                        <a class="page-scroll" href="#pricing">Capture Pricing</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -110,77 +110,64 @@
     </section>
 
     <!-- Download Section -->
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
+    <section id="pricing" class="content-section text-center">
+        <div class="pricing-section">
             <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Baddie Disposal Bill Calculator</h2>
-                    <p>Add baddies to calculate total price for capture:</p>
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2 class="disposalText">Baddie Disposal Bill Calculator</h2>
+                    <!--<p>Add baddies to calculate total price for capture:</p>-->
                     <!--<a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-sm">Visit Download Page</a>
                     <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-sm">Visit Download Page</a>
                     <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-sm">Visit Download Page</a>-->
-                    <div id="pricing" class="container-fluid">
+                    <div id="pricing2" class="container-fluid">
                         <div class="row slideanim">
                             <div class="col-sm-4 col-xs-12">
                                 <div class="panel panel-default text-center">
                                     <div class="panel-heading">
-                                        <h1>Basic</h1>
-                                    </div>
+                                        <h1>Ombs</h1>
+                                    </div>1
                                     <div class="panel-body">
-                                        <p><strong>20</strong> Lorem</p>
-                                        <p><strong>15</strong> Ipsum</p>
-                                        <p><strong>5</strong> Dolor</p>
-                                        <p><strong>2</strong> Sit</p>
-                                        <p><strong>Endless</strong> Amet</p>
+                                        <img src="bobomb.png" style='width:91.5%;' alt="bombomb">
                                     </div>
                                     <div class="panel-footer">
-                                        <h3>$19</h3>
-                                        <h4>per month</h4>
-                                        <button class="btn btn-lg">Sign Up</button>
+                                        <h3>11 Coins</h3>
+                                        <button onclick="addBobOmbs()" class="btn btn-default btn-lg">ADD</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-4 col-xs-12">
                                 <div class="panel panel-default text-center">
                                     <div class="panel-heading">
-                                        <h1>Pro</h1>
+                                        <h1>Cheeps</h1>
                                     </div>
                                     <div class="panel-body">
-                                        <p><strong>50</strong> Lorem</p>
-                                        <p><strong>25</strong> Ipsum</p>
-                                        <p><strong>10</strong> Dolor</p>
-                                        <p><strong>5</strong> Sit</p>
-                                        <p><strong>Endless</strong> Amet</p>
+                                        <img src="cheepcheep.png" style='width:102.5%;' alt="cheepcheep">
                                     </div>
                                     <div class="panel-footer">
-                                        <h3>$29</h3>
-                                        <h4>per month</h4>
-                                        <button class="btn btn-lg">Sign Up</button>
+                                        <h3>7 Coins</h3>
+                                        <button onclick="addCheepCheeps()" class="btn btn-default btn-lg">ADD</button>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-4 col-xs-12">
                                 <div class="panel panel-default text-center">
                                     <div class="panel-heading">
-                                        <h1>Premium</h1>
+                                        <h1>Goomba</h1>
                                     </div>
                                     <div class="panel-body">
-                                        <p><strong>100</strong> Lorem</p>
-                                        <p><strong>50</strong> Ipsum</p>
-                                        <p><strong>25</strong> Dolor</p>
-                                        <p><strong>10</strong> Sit</p>
-                                        <p><strong>Endless</strong> Amet</p>
+                                        <img src="goomba.png" style='width:77%; height:80%;' alt="Goombas">
                                     </div>
                                     <div class="panel-footer">
-                                        <h3>$49</h3>
-                                        <h4>per month</h4>
-                                        <button class="btn btn-lg">Sign Up</button>
+                                        <h3>5 Coins</h3>
+                                        <button onclick="addGoomba()" class="btn btn-default btn-lg">ADD</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div id="calculateButton"><button onclick="addGoomba()" class="btn btn-default btn-lg">Calculate Total Price:</button><div></div><div id="calculatedText"></div>
             </div>
         </div>
     </section>
@@ -190,8 +177,8 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Contact Mario</h2>
-                <p>Need some baddies smashed? Need plumming plummed? Please feel free to contact Mario and he will respond as soon as he's back from his latest adventure!</p>
-                <p><a href="mailto:feedback@startbootstrap.com">mario@thatfireplummer.com</a>
+                <p>Need some baddies smashed? Need plumbing plumbed? Please feel free to contact Mario and he will respond as soon as he's back from his latest adventure!</p>
+                <p><a href="mailto:mario@thatfireplumber">mario@thatfireplumber.com</a>
                 </p><p>119 Royal Flush Blvd, Brooklyn NY 11203, Mushroom Kingdom</p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
