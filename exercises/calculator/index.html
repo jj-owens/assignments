@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="container">
+    <div class="container" align="center">
+        <div class="container" align="left">
+            <span id="totalBox" class="totalBox"></span>
+            <div>
+                <input id="addBox1" type="number" class="addBox1">
+                <input id="addBox2" type="number" class="addBox2">
+                <button onClick="add()" class="add">+</button> Add
+            </div>
+            <div>
+                <input id="subBox1" type="number" class="subBox1">
+                <input id="subBox2" type="number" class="subBox1">
+                <button onClick="sub()" class="sub">-</button> Subtract
+            </div>
+            <div>
+                <input id="multBox1" type="number" class="multBox1">
+                <input id="multBox2" type="number" class="multBox1">
+                <button onClick="mult()" class="mult">*</button> Multiply
+            </div>
+        </div>
+    </div>
+    <div id="clear" align="left">
+        <button id="clrBtn" onClick="clearNums()">Clear</button>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>

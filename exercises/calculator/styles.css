@@ -1,0 +1,31 @@
+.totalBox {
+    background-color: cadetblue;
+    height: 100px;
+    width: 266px;
+    font-size: 100px;
+}
+
+.addBox1,
+.addBox2,
+.subBox1,
+.subBox2,
+.multBox1,
+.multBox2 {
+    background-color: aquamarine;
+}
+
+.add {
+    background-color: coral;
+}
+
+.sub {
+    background-color: yellowgreen;
+}
+
+.mult {
+    background-color: cornflowerblue;
+}
+
+#clrBtn {
+    background-color: crimson;
+}
