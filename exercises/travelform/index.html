@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form id="myForm">
+        <input type="text" placeholder="First name" value="first" name="firstname">
+        <input type="text" placeholder="Last name" value="last" name="lastname">
+        <input type="number" name="age">
+        <br>
+        <h2>Gender: </h2>
+        <input type="radio" name="gender" value="Male"> Male
+        <br>
+        <input type="radio" name="gender" value="Female"> Female
+        <br>
+        <input type="radio" name="gender" value="Declared"> Other
+        <br>
+        <h2>Travel Destinations: </h2>
+        <input class="locCheckBox" id="fiji" type="checkbox" name="location" value="Fiji"> Fiji
+        <br>
+        <input class="locCheckBox" id="losangeles" type="checkbox" name="location" value="Los Angeles"> Los Angeles
+        <br>
+        <input class="locCheckBox" id="sandiego" type="checkbox" name="location" value="San Diego"> San Diego
+        <br>
+        <input class="locCheckBox" id="panama" type="checkbox" name="location" value="Panama"> Panama
+        <br>
+        <h2>Dietary Restrictions</h2>
+        <input class="dietNoMas" type="checkbox" name="dietRestrict" value="None"> None
+        <br>
+        <input class="dietNoMas" id="pescatarian" type="checkbox" name="dietRestrict" value="Pescatarian"> Pescatarian
+        <input class="dietNoMas" id="vegetarian" type="checkbox" name="dietRestrict" value="Vegetarian"> Vegetarian
+        <br>
+        <input class="dietNoMas" id="vegan" type="checkbox" name="dietRestrict" value="Vegan"> Vegan
+        <input class="dietNoMas" id="peanuts" type="checkbox" name="dietRestrict" value="Peanuts"> Peanuts
+        <br>
+        <input class="dietNoMas" id="shellfish" type="checkbox" name="dietRestrict" value="Shellfish"> Shellfish
+        <input class="dietNoMas" id="gluten" type="checkbox" name="dietRestrict" value="Gluten"> Gluten
+    </form>
+    <button type="button" onclick="alertMe()">SUBMIT</button>
+
+</body>
+<script src="app.js"></script>
+
+</html>
