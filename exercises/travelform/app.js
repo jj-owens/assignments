@@ -1,42 +1,40 @@
 function alertMe() {
-    //    var fname = document.getElementById("myForm").elements["firstname"].value;
-    //    var lname = document.getElementById("myForm").elements["lastname"].value;
-    //    var formAge = document.getElementById("myForm").elements["age"].value;
-    //    var gender = document.getElementById("myForm").elements["gender"].value;
-    //    var travelTo = document.getElementById("myForm").elements["location"].value;
-    //    var dietNo = document.getElementById("myForm").elements["dietRestrict"].value;
-    //
-    //
-    //    function getLosangeles() {
-    //        var checkboxval = document.getElementById("myForm").elements["location"].value;
-    //        if (checkboxval.checked == true) {
-    //            return "Los Angeles";
-    //        } else {
-    //            return;
-    //        }
-    //    }
-    alert(dietChex());
+    var form = document.getElementById("myForm").elements;
+    var fname = form["firstname"].value;
+    var lname = form["lastname"].value;
+    var formAge = form["age"].value;
+    var gender = form["gender"].value;
+    var travelTo = form["locations"].value;
+    var none = form["none"].checked;
+    var pescatarian = form["pescatarian"].checked;
+    var vegetarian = form["vegetarian"].checked;
+    var vegan = form["vegan"].checked;
+    var peanuts = form["peanuts"].checked;
+    var shellfish = form["shellfish"].checked;
+    var gluten = form["gluten"].checked;
+    var restrictions = "";
 
-}
-
-function locChex() {
-    var checkedValue = null;
-    var inputElements = document.getElementsByClassName("locCheckBox");
-    for (var i = 0; inputElements[i]; ++i) {
-        if (inputElements[i].checked) {
-            checkedValue = inputElements[i].value;
-            return checkedValue;
-        }
+    if (none) {
+        restrictions += "No dietary restrictions.";
     }
-}
-
-function dietChex() {
-    var checkedValue = null;
-    var inputElements = document.getElementsByClassName("dietNoMas");
-    for (var i = 0; inputElements[i]; ++i) {
-        if (inputElements[i].checked) {
-            checkedValue = inputElements[i].value;
-            return checkedValue;
-        }
+    if (pescatarian) {
+        restrictions += "Pescatarian ";
     }
+    if (vegetarian) {
+        restrictions += "Vegetarian ";
+    }
+    if (vegan) {
+        restrictions += "Vegan ";
+    }
+    if (peanuts) {
+        restrictions += "Peanuts ";
+    }
+    if (shellfish) {
+        restrictions += "Shellfish ";
+    }
+    if (gluten) {
+        restrictions += "Gluten";
+    }
+
+    alert("First name: " + fname + "\rLast name: " + lname + "\rAge: " + formAge + "\rGender: " + gender + "\rTravel location: " + travelTo + "\rDietary restrictions: " + restrictions);
 }

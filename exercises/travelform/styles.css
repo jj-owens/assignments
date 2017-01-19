@@ -1,0 +1,33 @@
+body {
+    background: url("546898.jpg") no-repeat fixed center;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.panel {
+    width: 400px;
+    margin-left: 35%;
+    margin-top: 10%;
+    border-color: brown;
+    background-color: darksalmon;
+    text-align: center;
+}
+
+.panel-heading {
+    background-color: ;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+.selectbox {
+    width: 50%;
+    display: flex;
+    margin-left: 25%;
+}
+
+header {
+    text-align: center;
+    font-size: 45px;
+    text-decoration: underline;
+    letter-spacing: 6px;
+}
