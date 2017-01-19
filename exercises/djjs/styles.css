@@ -5,12 +5,20 @@
     display: inline-block;
 }
 
-.colorblock:hover {
+.colorblock:hover,
+.toBlue {
     background-color: blue;
+    height: 300px;
+    width: 300px;
+    display: inline-block;
 }
 
-.colorblock:active {
+.colorblock:active,
+.toRed {
     background-color: red;
+    height: 300px;
+    width: 300px;
+    display: inline-block;
 }
 
 .colorblock2 {
