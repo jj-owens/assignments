@@ -1,13 +1,35 @@
 .colorblock {
-    background-color: darkorange;
-    height: 100px;
-    width: 100px;
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    display: inline-block;
 }
 
 .colorblock:hover {
     background-color: blue;
 }
 
-.coloblock:active {
-    backgroung-color: red;
+.colorblock:active {
+    background-color: red;
+}
+
+.colorblock2 {
+    background-color: yellow;
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+}
+
+.colorblock3 {
+    background-color: green;
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+}
+
+.colorblock4 {
+    background-color: darkorange;
+    height: 300px;
+    width: 300px;
+    display: inline-block;
 }
