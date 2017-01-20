@@ -1,0 +1,30 @@
+{
+    "appetizers": {
+        "guacamole": {
+            "description": "The worlds best guacamole",
+            "ingredients": ["Avocado", "Salt", "Lime", "Pepper", "Tomato", "Cilantro", "Garlic"]
+        },
+
+        "artichokeDip": {
+            "descriotion": "Supremely satisfying artichoke dip!",
+            "ingredients": ["Artichoke", "Salt", "PepperJack Cheese", "Heavy Cream", "Pepper", "Garlic"]
+        }
+    },
+    "coldSandwiches": {
+        "description": "Cold cuts from Boars Head",
+        "ingredients": ["Boars head meats", "Boars head cheeses", "Sandwhich rolls", "Veggies to order"]
+    },
+    "hotSandwiches": {
+        "description": "Amazing baked sandwiches",
+        "ingredients": ["Boars head meats", "Boars head cheeses", "Sandwich rolls", "veggies to order"]
+    },
+    "desserts": {
+        "description": "mochi and chocolate!",
+        "ingredients": ["ice cream", "chocolate", "sugar"]
+
+    },
+    "drinks": {
+        "description": "Soda",
+        "ingredients": ["Water", "sugar", "artificial flavoring"]
+    }
+}
