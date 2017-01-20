@@ -1,0 +1,15 @@
+
+Fonts actively used in this project
+-----------------------------------
+
+Font name       :   Cormorant
+Font provider   :   google
+
+
+
+******************************************************************************
+
+
+
+
+Created by Typecast on 2017/01/20.
