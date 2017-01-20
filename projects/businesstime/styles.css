@@ -93,7 +93,7 @@ body {
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 .hometable{
-    background-color: greenyellow;
+    background-color: #afc47b;
     height: 950px;
     width: 90%;
     margin: 5%;
@@ -131,6 +131,8 @@ body {
     float: left;
     margin: 0px;
     padding: 3%;
+    font-size: 22px;
+    text-align: center;
 }
 .panel4 {
     background: url("7.jpg") no-repeat;
@@ -144,4 +146,14 @@ body {
 }
 .homebody {
     background: url("homebackground.png") repeat;
+}
+.homeimagecontainer{
+    background-color: #afc47b;
+    height: 1050px;
+    width: 90%;
+    margin: 5%;
+    padding: 5%;
+}
+.thumbnails {
+    max-height: 225px !important;
 }
