@@ -5,6 +5,7 @@
 
 body {
     font-family: "Cormorant";
+    background: url("homebackground.png") repeat;
 }
 
 .header {
@@ -115,7 +116,7 @@ body {
 .panel2 {
     background: url("5.jpg") no-repeat;
     background-size: 100% 100%;
-    background-color: red;
+    background-color: none;
     height:65%;
     width: 60%;
     float: right;
@@ -125,7 +126,7 @@ body {
 }
 .panel3 {
     background: url("textured_stripes.png") repeat;
-    background-color: white;
+    background-color: none;
     height: 75%;
     width: 40%;
     float: left;
@@ -137,7 +138,7 @@ body {
 .panel4 {
     background: url("7.jpg") no-repeat;
     background-size: 100% 100%;
-    background-color: gold;
+    background-color: none;
     float: right;
     height:35%;
     width: 60%;
@@ -156,4 +157,8 @@ body {
 }
 .thumbnails {
     max-height: 225px !important;
+}
+.buttonmodal {
+    text-align: center;
+    margin-right: 24%;
 }
