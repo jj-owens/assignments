@@ -10,7 +10,7 @@ body {
 
 .header {
     color: #40516d;
-    background: url(headerimg.jpg) no-repeat center;
+    background: url(headerimg.jpg) no-repeat center center;
     background-color: beige;
     height: 400px;
     width: 100%;
@@ -93,13 +93,15 @@ body {
     -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
-.hometable{
+
+.hometable {
     background-color: #afc47b;
     height: 950px;
     width: 90%;
     margin: 5%;
     padding: 5%;
 }
+
 .panel1 {
     color: #40516d;
     background-color: beige;
@@ -113,17 +115,22 @@ body {
     letter-spacing: 3px;
     text-align: center;
 }
+
 .panel2 {
-    background: url("5.jpg") no-repeat;
-    background-size: 100% 100%;
+    background: url(5.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background-color: none;
-    height:65%;
+    height: 65%;
     width: 60%;
     float: right;
-    margin:0px;
+    margin: 0px;
     padding: 3%;
     position: relative;
 }
+
 .panel3 {
     background: url("textured_stripes.png") repeat;
     background-color: none;
@@ -135,29 +142,35 @@ body {
     font-size: 22px;
     text-align: center;
 }
-.panel4 {
-    background: url("7.jpg") no-repeat;
-    background-size: 100% 100%;
-    background-color: none;
-    float: right;
-    height:35%;
-    width: 60%;
-    margin:0%;
 
+.panel4 {
+    background: url(7.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    float: right;
+    height: 35%;
+    width: 60%;
+    margin: 0%;
 }
+
 .homebody {
     background: url("homebackground.png") repeat;
 }
-.homeimagecontainer{
+
+.homeimagecontainer {
     background-color: #afc47b;
     height: 1200px;
     width: 90%;
     margin: 5%;
     padding: 5%;
 }
+
 .thumbnails {
     max-height: 225px !important;
 }
+
 .buttonmodal {
     text-align: center;
     margin-right: 24%;
