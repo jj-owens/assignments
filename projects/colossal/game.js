@@ -74,6 +74,24 @@ function meditate() {
     navigate();
 }
 
+function fightWin(newEnemy) {
+    if (newEnemy.health < 0) {
+        var roll = Math.floor(Math.random() * (2 - 1) + 1);
+        player1.attack += roll;
+        console.log("CONGRATULATIONS! You've defeated the enemy. Through your struggles you have honed your skills to increase your attack damage by " + roll + ". You now have " + player1.attack + " attack damage!");
+    }
+}
+
+function fight(newEnemy) {
+    newEnemy.health -= player1.attack;
+    console.log("You attack " + newEnemy.name + " for " + player1.attack + " DMG!");
+    player1.health -= newEnemy.attack;
+    console.log("The enemy has counterattacked for " + newEnemy.attack + " DMG!");
+    console.log("Your health is " + player1.health + " and the enemies health is " + newEnemy.health);
+}
+
+
+
 function playerInventory() {
     //var playerInput = readlineSync.keyInSelect(inventory, "Please select an action: ");
     //console.log(playerInput);
@@ -96,33 +114,20 @@ function combat() {
                 var roll = Math.floor(Math.random() * (1 - 0) + 0);
                 if (roll == 1) {
                     console.log("You deftly escaped the encounter and resume your travels...");
-                    return;
+                    navigate();
                 } else {
                     player1.health -= 3;
-                    console.log("Your attempt at escaping has failed! You took 3 DMG in the attempt!");
+                    console.log("You took 3 DMG while escaping!");
+                    navigate();
                 }
-                playerInput = readlineSync.keyInSelect(actions, "Please select an action: ");
+                playerInput = readlineSync.keyInSelect(ctions, "Please select an action: ");
             }
         } else if (playerInput == 1) {
-            function fight() {
-                newEnemy.health -= player1.attack;
-                console.log("You attack " + newEnemy.name + " for " + player1.attack + " DMG!");
-                player1.health -= newEnemy.attack;
-                setInterval(function () {
-                    console.log("The enemy has counterattacked for " + newEnemy.attack + " DMG!")
-                }, 2000);
-                console.log("Your health is " + player1.health + " and the enemies health is " + newEnemy.health);
-            }
+            fight(newEnemy);
         }
-        fight();
+        fight(newEnemy);
     }
-    if (newEnemy.health < 0) {
-        function fightWin() {
-            var roll = Math.floor(Math.random() * (2 - 0) + 0);
-            player1.attack += roll;
-            console.log("CONGRATULATIONS! You've defeated the enemy. Through your struggles you have honed your skills to increase your attack damage by " + roll + ". You now have " + player1.attack + " attack damage!");
-        }
-    }
+    fightWin(newEnemy);
     navigate();
 
 }
