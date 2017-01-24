@@ -11,14 +11,15 @@ localStorage.removeItem('key');
 'So if you need to store or retrieve more complex data types, you can use JSON.stringify() ' +
 'to turn complex data into a string before saving it to web storage or JSON.parse() to turn something ' +
 'back into a complex data type before trying to display or manipulate it.*!/*/
-var inputData = document.getElementsByClassName("form-group").elements;
-var firstName = inputData[0].textContent.value;
-var lastName = inputData[1].textContent.value;
-var gameName = inputData[2].textContent.value;
-var highScore = inputData[3].textContent.value;
-var email = inputData[4].textContent.value;
-var date = inputData[5].textContent.value;
-var trash = document.querySelector('.form-check-input:checked').value;
+var inputData = document.getElementsByClassName("form-group");
+var firstName = inputData[0];
+var lastName = inputData[1].value;
+var gameName = inputData[2].value;
+var highScore = inputData[3].value;
+var email = inputData[4].value;
+var date = inputData[5].value;
+console.log(firstName);
+var trash = document.querySelector('.form-check-input:checked');
 
 function formSubmit() {
     var submittedScore = new NewScore(firstName, lastName, gameName, highScore, email, date, trash)
