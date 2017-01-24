@@ -107,7 +107,7 @@ function combat() {
     var newEnemy = new enemy(name, rollAttack, rollHealth)
     console.log("You have been attacked by a " + newEnemy.name + "!");
     console.log("It has " + newEnemy.health + " HP, and " + newEnemy.attack + " attack DMG!");
-    while (newEnemy.health > 0) {
+    if (newEnemy.health > 0) {
         var playerInput = readlineSync.keyInSelect(actions, "Please select an action: ");
         if (playerInput == 0) {
             function tryRun() {
