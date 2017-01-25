@@ -1,0 +1,36 @@
+#timer {
+    background-color: brown;
+    height: 200px;
+    width: 700px;
+    margin-left: 25%;
+    margin-right: 25%;
+    color: black;
+    text-align: center;
+    font-size: 80px;
+}
+
+html {
+    background-color: black;
+}
+
+header {
+    font-size: 80px;
+    color: firebrick;
+    float: none;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center fixed;
+    text-overflow: ellipsis;
+}
+
+.numbers {
+    background-color: none;
+    height: 100px;
+    width: 70px;
+    display: inline-block;
+    margin-top: 7%;
+    margin-left: 0%;
+    margin-right: 3%;
+    color: black;
+    font-size: 90px;
+}
