@@ -9,18 +9,18 @@ var totalPrice = 0;
 
 function addGoomba() {
     goombaNum++;
-    document.getElementById("badAdd3").innerHTML = goombaNum;
+    document.getElementById("badAdd3").textContent = goombaNum;
     //totalPrice += goombaNum * goombaPrice;
 }
 
 function addBobOmbs() {
     ombNum++;
-    document.getElementById("badAdd1").innerHTML = ombNum;
+    document.getElementById("badAdd1").textContent = ombNum;
 }
 
 function addCheepCheeps() {
     cheepNum++;
-    document.getElementById("badAdd2").innerHTML = cheepNum;
+    document.getElementById("badAdd2").textContent = cheepNum;
 }
 
 function getTotal() {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="utf-8">
@@ -9,11 +10,12 @@
     <meta name="author" content="">
     <title>Mario's Pest Control</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
+
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -45,7 +47,7 @@
     </nav>
     <div class="fullscreen-bg">
         <video loop muted autoplay poster="" class="fullscreen-bg__video">
-            <source src="marioHD720p.mov" type="video/webm">
+            <source src="img/marioHD720p.mov" type="video/webm">
         </video>
     </div>
     <header class="intro">
@@ -99,11 +101,12 @@
                                         <h1>Ombs</h1>
                                     </div>1
                                     <div class="panel-body">
-                                        <img src="bobomb.png" style='width:91.5%;' alt="bombomb">
+                                        <img src="img/bobomb.png" style='width:91.5%;' alt="bombomb">
                                     </div>
                                     <div class="panel-footer">
                                         <h3>11 Coins</h3>
-                                        <button onclick="addBobOmbs()" class="btn btn-default btn-lg">ADD</button><div id="badAdd1" class="baddieNumber"></div>
+                                        <button onclick="addBobOmbs()" class="btn btn-default btn-lg">ADD</button>
+                                        <div id="badAdd1" class="baddieNumber"></div>
                                     </div>
                                 </div>
                             </div>
@@ -113,11 +116,12 @@
                                         <h1>Cheeps</h1>
                                     </div>
                                     <div class="panel-body">
-                                        <img src="cheepcheep.png" style='width:102.5%;' alt="cheepcheep">
+                                        <img src="img/cheepcheep.png" style='width:102.5%;' alt="cheepcheep">
                                     </div>
                                     <div class="panel-footer">
                                         <h3>7 Coins</h3>
-                                        <button onclick="addCheepCheeps()" class="btn btn-default btn-lg">ADD</button><div id="badAdd2" class="baddieNumber"></div>
+                                        <button onclick="addCheepCheeps()" class="btn btn-default btn-lg">ADD</button>
+                                        <div id="badAdd2" class="baddieNumber"></div>
                                     </div>
                                 </div>
                             </div>
@@ -127,11 +131,12 @@
                                         <h1>Goomba</h1>
                                     </div>
                                     <div class="panel-body">
-                                        <img src="goomba.png" style='width:77%; height:80%;' alt="Goombas">
+                                        <img src="img/goomba.png" style='width:77%; height:80%;' alt="Goombas">
                                     </div>
                                     <div class="panel-footer">
                                         <h3>5 Coins</h3>
-                                        <button onclick="addGoomba()" class="btn btn-default btn-lg">ADD</button><div id="badAdd3" class="baddieNumber"></div>
+                                        <button onclick="addGoomba()" class="btn btn-default btn-lg">ADD</button>
+                                        <div id="badAdd3" class="baddieNumber"></div>
                                     </div>
                                 </div>
                             </div>
@@ -139,7 +144,12 @@
                     </div>
                 </div>
             </div>
-            <div id="calculateButton"><button onclick="getTotal()" class="btn btn-default btn-lg">Calculate Total Price:</button><div></div><div id="calculatedText"><br></div>
+            <div id="calculateButton">
+                <button onclick="getTotal()" class="btn btn-default btn-lg">Calculate Total Price:</button>
+                <div></div>
+                <div id="calculatedText">
+                    <br>
+                </div>
             </div>
         </div>
     </section>
@@ -149,7 +159,8 @@
                 <h2>Contact Mario</h2>
                 <p>Need some baddies smashed? Need plumbing plumbed? Please feel free to contact Mario and he will respond as soon as he's back from his latest adventure!</p>
                 <p><a href="mailto:mario@thatfireplumber">mario@thatfireplumber.com</a>
-                </p><p>119 Royal Flush Blvd, Brooklyn NY 11203, Mushroom Kingdom</p>
+                </p>
+                <p>119 Royal Flush Blvd, Brooklyn NY 11203, Mushroom Kingdom</p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
                         <a href="https://twitter.com/supermariobro" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
@@ -174,8 +185,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAo0txA4TLh_8Va-mL0qOfNrH0KE9iB4ag&sensor=false"></script>
-    <script src="grayscale.js"></script>
-    <script src = "app.js"></script>
+    <script src="mariostuff.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
