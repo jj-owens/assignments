@@ -1,0 +1,30 @@
+.mainList {
+    text-align: center;
+    margin-top: 10%;
+}
+
+#inputDiv {
+    margin-top: 2.5%;
+}
+
+#addBtn {
+    margin-top: 1%;
+}
+
+#inputBox {
+    text-align: center;
+    width: 100px;
+}
+
+.delItem {
+    text-align: center;
+    display: inline-block;
+    margin-top: 1%;
+}
+
+.li {
+    text-align: center;
+    display: inline-block;
+    margin-top: 1%;
+    text-transform: capitalize;
+}

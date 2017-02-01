@@ -3,8 +3,8 @@
 
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="jquery.tablesorter.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css" />
     <link rel="stylesheet" href="styles.css">
     <title>
         High Score Haven
@@ -13,35 +13,35 @@
 
 <body>
     <div class="jumbotron">
-        <h1>JJ's High Scores!<small><br>do you even lift, bro?</small></h1>
+        <h1>JJ's High Scores!<small class="smallText"><br>Do you even lift, bro?</small></h1>
     </div>
     <div>
         <h2>Submit your High Score below!</h2></div>
-    <div class="form-container container-fluid">
+    <div class="form-container container-fluid mainContainer">
         <form id="formData">
             <div class="form-group">
                 <label for="firstNameInput">First Name</label>
-                <input type="text" class="form-control myForm" id="firstNameInput" aria-describedby="textHelp" placeholder="Enter First Name">
+                <input type="text" class="form-control myForm" id="firstNameInput" aria-describedby="textHelp" placeholder="Enter First Name" required>
             </div>
             <div class="form-group">
                 <label for="lastNameInput">Last Name</label>
-                <input type="text" class="form-control myForm" id="lastNameInput" aria-describedby="textHelp" placeholder="Enter Last Name">
+                <input type="text" class="form-control myForm" id="lastNameInput" aria-describedby="textHelp" placeholder="Enter Last Name" required>
             </div>
             <div class="form-group">
                 <label for="gameInput">Game</label>
-                <input type="text" class="form-control myForm" id="gameInput" aria-describedby="textHelp" placeholder="Enter Game Name">
+                <input type="text" class="form-control myForm" id="gameInput" aria-describedby="textHelp" placeholder="Enter Game Name" required>
             </div>
             <div class="form-group">
                 <label for="scoreInput">High Score</label>
-                <input type="text" class="form-control myForm" id="scoreInput" aria-describedby="textHelp" placeholder="Enter High Score">
+                <input type="text" class="form-control myForm" id="scoreInput" aria-describedby="textHelp" placeholder="Enter High Score" required>
             </div>
             <div class="form-group">
                 <label for="emailInput">Email</label>
-                <input type="email" class="form-control myForm" id="emailInput" aria-describedby="textHelp" placeholder="Enter Email">
+                <input type="email" class="form-control myForm" id="emailInput" aria-describedby="textHelp" placeholder="Enter Email" required>
             </div>
             <div class="form-group">
                 <label for="dateInput">Score submission date</label>
-                <input type="datetime-local" class="form-control myForm" id="dateInput" aria-describedby="textHelp" placeholder="Enter Date">
+                <input type="datetime-local" class="form-control myForm" id="dateInput" aria-describedby="textHelp" placeholder="Enter Date" required>
             </div>
             <div class="form-check">
                 <label class="form-check-label">
@@ -51,7 +51,7 @@
             <button type="button" class="btn btn-primary submitButton" onclick="formSubmit()">Submit Score!</button>
         </form>
     </div>
-    <table id="scoreTable" class="table table-hover table-responsive tablesorter">
+    <table id="scoreTable" class="table display table-striped">
         <thead>
             <tr>
                 <th class="header">
@@ -102,7 +102,9 @@
             </tr>
     </table>
 </body>
+<script src=" https://code.jquery.com/jquery-3.1.1.slim.js " integrity="sha256-5i/mQ300M779N2OVDrl16lbohwXNUdzL/R2aVUXyXWA=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="DataTables/datatables.min.js"></script>
 <script src="app.js"></script>
 
 </html>
