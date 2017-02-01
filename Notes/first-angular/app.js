@@ -7,4 +7,5 @@ app.controller("MainController", function ($scope) {
         firstname: "Simon",
         lastname: "Phoenix"
     }
+    $scope.nums = [1, 2, 3, 4];
 });

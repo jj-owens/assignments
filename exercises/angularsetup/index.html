@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="playerKills">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Setup Ng Repeat</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+</head>
+
+<body ng-controller="mainControl">
+    <div class="row">
+        <div ng-repeat="players in player.kills" class="col-lg-6 col-offset-3">
+            <h1>{{players.handle}}</h1>
+            <h2>{{players.rank}}</h2>
+            <h3>
+            <ul>
+            <li ng-repeat="name in players.clan">{{name}}</li>
+        </ul>
+        </h3>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
