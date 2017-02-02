@@ -1,0 +1,26 @@
+body {
+    color: red;
+    background-color: black;
+    background: url(img/background.jpg) no-repeat center fixed;
+}
+
+.jumbotron {
+    text-align: center;
+    font-size: 50px;
+    opacity: .8;
+}
+
+.imageSpot {
+    max-width: 50%;
+}
+
+.imageDiv {
+    margin-left: 35%;
+    float: none;
+}
+
+.imageTitle {
+    text-align: left;
+    font-size: 50px;
+    font-weight: 300;
+}
