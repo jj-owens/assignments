@@ -1,0 +1,10 @@
+header {
+    text-align: center;
+    text-shadow: 1px 1px 5px;
+    font-size: 40px;
+}
+
+body {
+    color: darkcyan;
+    text-align: center;
+}

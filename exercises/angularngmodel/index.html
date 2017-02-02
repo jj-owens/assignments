@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Ng Model</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body ng-controller="bodyController">
+    <header>Input data below</header>
+    <div class="row container-fluid">
+        <div class="col-md-4">1st Well
+            <div class="well">{{input1}}</div>
+            <input type="text" placeholder="type here" ng-model="input1">
+        </div>
+        <div class="col-md-4">2nd Well
+            <div class="well">{{input2}}</div>
+            <input type="text" placeholder="type here" ng-model="input2">
+        </div>
+        <div class="col-md-4">3rd Well
+            <div class="well">{{input3}}</div>
+            <input type="text" placeholder="type here" ng-model="input3">
+        </div>
+    </div>
+</body>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+
+</html>

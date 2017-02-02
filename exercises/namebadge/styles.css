@@ -1,0 +1,59 @@
+header {
+    text-align: center;
+    text-shadow: 1px 1px 5px;
+    font-size: 40px;
+}
+
+body {
+    color: darkcyan;
+}
+
+.main {
+    background-color: beige;
+    margin: auto;
+    float: none;
+}
+
+input {
+    padding: 2%;
+    width: 58%;
+    margin-left: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.bigBox {
+    width: 80%;
+    margin: auto;
+    float: none;
+}
+
+button {
+    width: 81%;
+    text-align: center;
+}
+
+.badge {
+    margin-top: 15%;
+    height: 400px;
+}
+
+.badgeContent {
+    color: darkslategrey;
+    background-color: white;
+    width: 100%;
+    text-align: left;
+}
+
+.badgeHeader {
+    height: 20%;
+}
+
+.badgeContentright {
+    color: darkslategrey;
+    background-color: white;
+    height 100px;
+    width: 100%;
+    text-align: left;
+    word-wrap: normal;
+}

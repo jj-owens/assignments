@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Ng Model</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body ng-controller="bodyController as Ctrl">
+    <header>Input data below</header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="main col-md-6 col-md-offset-3">
+                <div class="col-sm-6 col md-offset-2">
+                    <input type="text" placeholder="First Name" ng-model="person.firstname">
+                    <input type="text" placeholder="Email" ng-model="person.email">
+                    <input type="text" placeholder="Phone" ng-model="person.phone">
+                </div>
+                <div class="col-sm-6">
+                    <input type="text" placeholder="Last Name" ng-model="person.lastname">
+                    <input type="text" placeholder="Place of Birth" ng-model="person.birth">
+                    <input type="text" placeholder="Favorite Food" ng-model="person.food">
+                </div>
+                <div class="col-sm-12">
+                    <textarea class="bigBox" cols="50" rows="10" name="description" ng-model="person.description"></textarea>
+                </div>
+                <button type="button" ng-click="newNameTag(person)">Submit</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="badge col-md-6 col-md-offset-3">
+                <div class="badgeHeader">Hello!
+                    <br>my name is</div>
+                <div class="badgeContent col-md-6">
+                    <h3>Name: {{newPerson[0].firstname}} {{newPerson[0].lastname}}</h3>
+                    <h4>Phone number: {{newPerson[0].phone}}</h4>
+                    <h4>Email: {{newPerson[0].email}}</h4>
+                    <br>
+                </div>
+                <div class="badgeContentright col-md-6">
+                    <h4>Plce of birth: {{newPerson[0].birth}}</h4>
+                    <h4>Favorite Food: {{newPerson[0].food}}</h4>
+                    <h4>About me: {{newPerson[0].description}}</h4>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.js " integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+
+</html>
