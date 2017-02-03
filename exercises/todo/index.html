@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ToDo">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Todo App</title>
+</head>
+
+<body ng-controller="MainController">
+    <header>
+        <h1>EZ to do list!</h1>
+    </header>
+    <div class="formDiv">
+        <form class="cf">
+            <div class="half left cf">
+                <input type="text" id="item" placeholder="Item name" ng-model="newItems.title">
+                <input type="number" id="price" placeholder="Price" ng-model="newItems.price">
+                <textarea name="description" type="text" id="itemDescription" placeholder="Description" ng-model="newItems.description"></textarea>
+            </div>
+            <div class="half right cf">
+                <input type="text" id="imageUrl" placeholder="Image URL" ng-model="newItems.imgUrl">
+            </div>
+            <input type="submit" value="Submit" id="input-submit" ng-click="addButton(newItems)">
+        </form>
+        <div class="main">
+            <div>
+                <h1>{{items.title}}</h1>
+                <h1>{{items.price}}</h1>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+
+</html>
