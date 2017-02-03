@@ -27,8 +27,7 @@
         </form>
         <div class="main">
             <div>
-                <h1>{{items.title}}</h1>
-                <h1>{{items.price}}</h1>
+                <h1 ng-repeat="items in todoList">{{items.title}}</h1>
             </div>
         </div>
     </div>
