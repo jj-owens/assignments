@@ -1,0 +1,21 @@
+.mainBody {
+    margin: auto;
+    width: 80%;
+    height: 100px;
+    background-color: deepskyblue;
+}
+.input {
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 20%;
+}
+.submitBtn {
+    text-align: center;
+    margin-right: 45%;
+    margin-left: 45%;
+    margin-top: 5%;
+}
+.itemsBody {
+    margin-top: 10%;
+    float: none;
+}

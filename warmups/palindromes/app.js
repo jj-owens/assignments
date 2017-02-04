@@ -1,3 +1,4 @@
+/*
 function palindrome(str) {
     // Good luck!
     var lowerCaseString = str.toLowerCase();
@@ -13,6 +14,16 @@ function palindrome(str) {
     }
 }
 
+*/
 
 
-palindrome("I madam, I made radio! So I dared! Am I mad?? Am I?!");
+////updated code below.
+
+function palindrome(str) {
+    var newStr = str.replace(/[\W_]/g, '').toLowerCase();
+    console.log(newStr == newStr.toLowerCase().split('').reverse('').join(''));
+}
+
+palindrome("A Toyota! Race fast, safe car! A Toyota!");
+
+//returns true if palindrome, and false if not a palindrome.

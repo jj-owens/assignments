@@ -1,0 +1,28 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ugly Things</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="mainBody">
+            <input type="text" name="title" class="input col-md-4" ng-model="title" placeholder="Label">
+            <input type="text" name="desc" class="input col-md-4" ng-model="description" placeholder="Description">
+            <input type="text" name="img" class="input col-md-4" ng-model="imgUrl" placeholder="URL">
+            <button type="button" name="submit" class="submitBtn btn btn-info" ng-click="addUgly()">Submit</button>
+        </div>
+        <div class="itemsBody">
+        <div class="item"></div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+
+</html>
