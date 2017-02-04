@@ -1,5 +1,5 @@
 <!Doctype html>
-<html lang="en">
+<html lang="en" ng-app="uglyApp">
 
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
@@ -9,15 +9,26 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid" ng-controller="MainController">
         <div class="mainBody">
-            <input type="text" name="title" class="input col-md-4" ng-model="title" placeholder="Label">
-            <input type="text" name="desc" class="input col-md-4" ng-model="description" placeholder="Description">
-            <input type="text" name="img" class="input col-md-4" ng-model="imgUrl" placeholder="URL">
-            <button type="button" name="submit" class="submitBtn btn btn-info" ng-click="addUgly()">Submit</button>
+           <form name="itemInfoForm" ng-submit="addItem(item)">
+            <input type="text" name="title" class="input col-md-4" ng-model="item.title" placeholder="Label">
+            <input type="text" name="desc" class="input col-md-4" ng-model="item.description" placeholder="Description">
+            <input type="text" name="img" class="input col-md-4" ng-model="item.imgUrl" placeholder="URL">
+            <input type="submit" class="submitBtn" value="Add Ugly Item"/>
+            </form>
         </div>
         <div class="itemsBody">
-        <div class="item"></div>
+        <div class="items" ng-repeat="items in itemArray">
+            <div><h1>{{items.title}}</h1><br><h3>{{items.description}}</h3>
+            </div>
+            <div class="itemImage">
+                <img class='newImg' ng-src="{{items.imgUrl}}" alt="picofuglything">
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
         </div>
     </div>
 </body>

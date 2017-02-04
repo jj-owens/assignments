@@ -14,8 +14,21 @@
     margin-right: 45%;
     margin-left: 45%;
     margin-top: 5%;
+    background-color: gold;
+    box-shadow: 5px 5px 5px;
 }
 .itemsBody {
     margin-top: 10%;
     float: none;
+    text-align: center;
+}
+.itemImage {
+    margin: auto;
+    float: none;
+    text-align: center;
+}
+.newImg {
+    max-width: 35%;
+    max-height: 40%;
+    
 }
