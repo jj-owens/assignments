@@ -1,0 +1,1 @@
+This was a warm-up to remember how to use API's in Angular. Had a little fun making a Star Wars into site which used a star wars API for the main text!
