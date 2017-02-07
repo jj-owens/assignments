@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="StateApp">
+
+<head>
+    <title>Favorite State</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-md-2"></div>
+        <div id="mainViewHeader" class="row col-md-6">
+            <div><a href="#/home">Home</a><pre>  </pre>
+                <a href="#/about">About</a><pre>  </pre>
+                <a href="#/love">Why I love California</a>
+            </div>
+            <div ng-view></div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+<script src="app.js"></script>
+<script src="home/home.js"></script>
+
+</html>

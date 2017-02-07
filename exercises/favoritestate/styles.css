@@ -1,0 +1,28 @@
+.col-md-2 {
+    background-color:black;
+    height: 1950px;
+}
+#mainViewHeader {
+    color: darkgoldenrod;
+    text-align: center;
+    letter-spacing: 3px;
+    text-decoration-line: underline;
+    word-spacing: 1px;
+    
+    
+    
+}
+body {
+    font-family: sans-serif;
+}
+img {
+    max-width: 100%;
+}
+.container {
+    margin-left: 10%;
+    float: none;
+    
+}
+p {
+    font-size: 10px;
+}
