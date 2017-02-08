@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+    <head>
+        <title>Mighty Clicker</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular.js"></script>
+    </head>
+    <body ng-controller="MainController">
+        <div class="one">
+            <div class="two">
+                <div class="three">
+                    <header>
+                        <img class="headerImg" src="img/click-512.png" alt="finger">
+                        <h1>Welcome to the Mighty Clicker Page!</h1>
+                    </header>
+                    <div>Clicking the buttons below will wage the war of clicks!</div>
+                    <button type="button" class="btn btn-primary" ng-click="blueBtn()">BLUE</button>
+                    <button type="button" class="btn btn-danger" ng-click="redBtn()">RED</button>
+                    <div>BLUE SCORE: {{blueCount}}</div>
+                    <div>RED SCORE: {{redCount}}</div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular-route.js"></script>
+    <script src="app.js"></script>
+</html>

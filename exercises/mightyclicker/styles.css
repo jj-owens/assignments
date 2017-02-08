@@ -1,0 +1,30 @@
+body {
+    font-family: monospace;
+}
+.one {
+    height: 1080px;
+    background-color: black;
+}
+.two {
+    margin: auto;
+    height: 90%;
+    width: 90%;
+    background-color: lavender;
+}
+.three {
+    background: url(img/geometry2.png) repeat;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    background-color: lightgray;
+    box-shadow: 10px 10px 10px;
+}
+.headerImg {
+    float: none;
+    max-width: 25%;
+    
+}
+.btn {
+    margin: 5%;
+}
