@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <title>Angular Service Beginings</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body ng-controller="MainController">
+   <header>Favorite Pokemon List</header>
+    <input type="text" ng-model="pokeInput">
+    <button type="button" ng-click="addPokemon(pokeInput)">Add</button>
+    <button type="button" ng-click="remPokemon()">Remove</button>
+    <div class="pokeContainer">
+    <div class="pokeNames" aria-atomic=""ng-repeat="poke in pokemons">{{poke.name | uppercase}}<br>
+        <div class="sprites" ng-repeat="(name, url) in poke.images"><!--{{name | uppercase}}: --><img ng-src="{{url}}" alt="sprites"></div>
+    </div>
+    </div>
+   
+</body>
+<script src="app.js"></script>
+</html>

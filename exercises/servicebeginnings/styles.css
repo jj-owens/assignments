@@ -1,0 +1,29 @@
+.sprites {
+    display: inline-block;
+    opacity: 1.0 !important;
+    
+}
+body {
+    text-align: center;
+    background-color: gainsboro;
+}
+header {
+    background-color: white;
+    opacity: .5;
+    height: 100px;
+    width: 100%;
+    font-size: 40px;
+}
+.pokeContainer {
+    margin: auto;
+    width: 75%;
+    background-color: white;
+    height: 2000px;
+}
+.pokeNames {
+    display: block;
+    text-align: center;
+    font-size: 35px;
+    color: mediumpurple;
+    margin-top: 5%;
+}
