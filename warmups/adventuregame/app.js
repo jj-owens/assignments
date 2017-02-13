@@ -1,0 +1,24 @@
+var readline = require("readline-sync");
+
+var username = readline.question('what is your name admin?');
+console.log('Hi ' + username);
+
+var start = readline.question("You wake up to the sound of your alarm, feeling groggy. You notice something is different about today, but you\'re not sure. Do you WAKE UP or SNOOZE? ").toUpperCase();
+
+if (start == "WAKE UP"){
+	var coffee = readline.question("You roll out of bed and walk to the kitchen to make coffee. Everything is still. There is no one else awake in your home yet. No noise. It is strange. You proceed to make coffee and think about yesterday, when suddenly you remember you were bit by something on the way home. You suddenly look down to your arm and notice a small red welt. It is warm to the touch. Do you LOOK CLOSER or FIND FAMILY? ").toUpperCase();
+} else {
+	var slowStart = readline.question("Nothing better than sleeping in sometimes. You feel more groggy than befoe but well rested. What time is it? It seems later but the house is still quiet. What is going on? You feel a burning sensation on your arm. Probably slept on it wrong. You walk to the kitchen to start making coffee. As you make coffe you notice your arm really hurts as you take your first sip. HIT ENTER. ");
+}
+if (coffee == "LOOK CLOSER"){
+	console.log("You peer at the wound a bit and notice sevel little punctures in your skin. They seem very small. You think it was a spider. You do not like spiders. This thought makes you feel a little ill and as you peer out your kitchen window you notice the family vehicle is still home. Where is everybody?");
+} else {
+	var stairs = readline.question("You stagger slightly as you turn and walk towards the living room. You are beginning to develop a headache. You down a few more swigs of coffee hoping that will set your brain straight. As you make your way into the living room, you notice everybody has their shoes still at the front door. You become concerned. It is never this quiet in the house at this time. Your thoughts shift to your family and you begin to worry. You stand at the bottom of the stairs and wonder if you should go up or head to the basement. Do you HEAD UPSTAIRS or HEAD DOWNSTAIRS").toUpperCase();
+}
+var stairs = readline.question("You stagger slightly as you turn and walk towards the living room. You are beginning to develop a headache. You down a few more swigs of coffee hoping that will set your brain straight. As you make your way into the living room, you notice everybody has their shoes still at the front door. You become concerned. It is never this quiet in the house at this time. Your thoughts shift to your family and you begin to worry. You stand at the bottom of the stairs and wonder if you should go up or head to the basement. Do you HEAD UPSTAIRS or HEAD DOWNSTAIRS").toUpperCase();
+
+if (stairs == "HEAD UPSTAIRS") {
+	console.log("As you almost reach the top of the stairs, suddenly it feels like a fire is burning a hole through your arm. You look down and see a gaping hole where the bite originated!!! You drop your coffee in shock and it tumbles down the stairs, crashing into audible splinters. As you clutch your arm in terror you try to screm and realize you have lost your footing. Your heart sinks as you feel yourself falling backwards and clumsily miss grasping the banister. As your head and back slam against the hard corners of the first few steps you fall down, you go into a haze- and vertigo sets in as you feel your body tumbling end over end. Just when the feeling of falling is accelerating to the point of impact at the bottom of the stairs, you wake up with a jolt. Here you are in bed, just fine. What a nightmare! You wipe the sweat off your brow, kiss your honey good morning, and walk to the kitchen for cofee. You see children playing outside. As you make your coffee, you suddenly notice a strange swelling on your arm...");
+} else {
+	console.log("At the top of the stairs to the basement, suddenly it feels like a fire is burning a hole through your arm. You look down and see a gaping hole where the bite originated!!! You drop your coffee in shock and it tumbles down the stairs, crashing into audible splinters. As you clutch your arm in terror you try to screm and realize you have lost your footing. Your heart sinks as you feel yourself falling and clumsily miss grasping the banister. As your head and shoulder slam against the hard corners of the first few steps you fall down, you go into a haze- and vertigo sets in as you feel your body tumbling end over end. Just when the feeling of falling is accelerating to the point of impact at the bottom of the stairs, you wake up with a jolt. Here you are in bed, just fine. What a nightmare! You wipe the sweat off your brow, kiss your honey good morning, and walk to the kitchen for cofee. You see children playing outside. As you make your coffee, you suddenly notice a strange swelling on your arm...")
+}
