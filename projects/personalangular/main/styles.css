@@ -1,0 +1,20 @@
+.vidWindow {
+	margin: auto;
+	float: none;
+}
+
+.video {
+	text-align: center;
+	float: none;
+}
+
+.icon {
+	max-width: 40%;
+	float: left;
+}
+
+.navbar-header {
+	float: left;
+	display: inline-block;
+	max-width: 10%;
+}

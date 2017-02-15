@@ -2,27 +2,39 @@
 <html lang="en" ng-app="TwitchApp">
 
 <head>
-	<title>Favorite Twitch Streams</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap-grid.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css">
+	<title>My TwitchView</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/css/tether.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="styles.css">
+</head>
 
-	<body ng-controller="IndexController">
-		<div>
-			<a href="#/"></a>
-			{{hello}}
-		</div>
-<!--		<ng-view></ng-view>-->
-	</body>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js">
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js">
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.js">
-	</script>
-	<script src="app.js"></script>
-
+<body ng-controller="indexController">
+	<header ng-hide="isHidden">
+		<div class="jumbotron">
+			My.Twitch.Tv</div>
+		<br>Enter your Twitch.tv username below!
+		<br>
+		<input type="text" class="loginBox" placeholder="     Twitch Username" ng-model="user">
+		<br>
+		<input type="button" class="btn btn-info" value="Login!" ng-click="getUser(user); isHidden = !isHidden">
+	</header>
+	{{username}}
+	<ng-view></ng-view>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
 
 </html>
+
+
+
+
+
+<!--
+<head>
+	<meta http-equiv="default-style" content="0; url=https://api.twitch.tv/kraken/oauth2/authorize?response_type=token&client_id=1e86nkbswr0q12g7smr5fw495sysbi&redirect_uri=http://localhost:51744/#!/&scope=user_subscriptions" />
+</head>-->

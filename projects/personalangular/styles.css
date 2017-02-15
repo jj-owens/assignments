@@ -1,1 +1,23 @@
-1e86nkbswr0q12g7smr5fw495sysbi- twitch application id
+body {
+	text-align: center;
+	background-color: #687891;
+}
+
+.jumbotron {
+	max-width: 70%;
+	margin: auto;
+	opacity: .9;
+	font-family: monospace;
+	font-size: 35px;
+	margin-top: 5%;
+	box-shadow: 1px 1px 1px 1px;
+}
+
+.btn {
+	margin: 2%;}
+
+.loginBox {
+	margin: 2%;
+	border-radius: 6px;
+	border: none;
+}
