@@ -1,0 +1,18 @@
+header div {
+	text-align: center;
+	display: inline-block;
+	font-size: 40px;
+	margin-left: 2%;
+	margin-right: 2%;
+	color: antiquewhite;
+}
+
+header {
+	text-align: center;
+	background-color: black;
+	opacity: .7;
+}
+
+body {
+	background-image: url(/img/concrete_seamless.png);
+}
