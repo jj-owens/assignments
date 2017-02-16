@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 
-<body ng-controller="indexController">
+<body ng-controller="mainController">
 	<header ng-hide="isHidden">
 		<div class="jumbotron">
 			My.Twitch.Tv</div>
@@ -16,9 +16,10 @@
 		<br>
 		<input type="text" class="loginBox" placeholder="     Twitch Username" ng-model="user">
 		<br>
-		<input type="button" class="btn btn-info" value="Login!" ng-click="getUser(user); isHidden = !isHidden">
+		<a href="#!/home">
+			<input type="button" class="btn btn-info" value="Login!" ng-click="getUser(user); isHidden = !isHidden">
+		</a>
 	</header>
-	{{username}}
 	<ng-view></ng-view>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
@@ -32,9 +33,14 @@
 
 
 
-
-
 <!--
 <head>
 	<meta http-equiv="default-style" content="0; url=https://api.twitch.tv/kraken/oauth2/authorize?response_type=token&client_id=1e86nkbswr0q12g7smr5fw495sysbi&redirect_uri=http://localhost:51744/#!/&scope=user_subscriptions" />
 </head>-->
+
+
+
+
+
+
+<!--https://api.twitch.tv/kraken/oauth2/authorize?response_type=token&client_id=1e86nkbswr0q12g7smr5fw495sysbi&redirect_uri=localhost&scope=user_subsciptions-->
