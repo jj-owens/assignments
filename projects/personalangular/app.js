@@ -14,9 +14,6 @@ app.controller("mainController", ["$scope", "indexService", function ($scope, in
 		username.push(user);
 		alert(username + " has been logged in!");
 		indexService.getData(username);
-		//		$scope.userFavorites = indexService.channelArr;
-		//		console.log(userFavorites);
-
 		$scope.userFavorites = indexService.urlArr;
 	}
 

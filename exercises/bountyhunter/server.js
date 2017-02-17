@@ -37,19 +37,12 @@ app.delete("/bounty/:id", function (req, res) {
 });
 
 app.put("/bounty/:id", function (req, res) {
-	console.log(req.params.id);
 	for (var i = 0; i < bounties.length; i++) {
-		console.log(bounties[i].id)
-		if (bounties[i].id === req.params.id) {
-			for (var key in bounties[i]) {
-				bounties[i][key] = req[key];
-
-			}
-
+		if (bounties[i].id == req.params.id) {
+			bounties[i] = req.body;
+			res.send(bounties);
 		}
 	}
-	return bounties[i] = req.body;
-
 	res.status(404).send({
 		message: "Not Found!"
 	});
@@ -62,15 +55,6 @@ app.post("/bounty", function (req, res) {
 	bounties.push(req.body);
 	res.send(bounties);
 });
-
-app.put("/bounty", function (req, res) {
-
-})
-
-app.delete("/bounty", function (req, res) {
-	bounties.splice(indexOf(req.body));
-})
-
 
 app.listen(8484, function () {
 	console.log("App.js is listening on port 8484...");
