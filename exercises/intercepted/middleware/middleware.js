@@ -1,4 +1,5 @@
-module.exports = function (req, res, next) {
-	someObj.newSomething = "somethingElseHere";
+module.exports.addItem = function (req, res, next) {
+	req.body.newSomething = "somethingElseHere";
+	console.log(req.body.newSomething)
 	next();
 };

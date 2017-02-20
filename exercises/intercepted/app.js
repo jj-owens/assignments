@@ -1,18 +1,14 @@
 var express = require("express");
 var app = express();
-var someMiddleware = require("./middleware/middleware")
-var someObj = {
-	"name": "whatever",
-	"source": "somewhere",
-	"power": "everything"
-}
-
-app.use(someMiddleware);
+var bodyParser = require("body-parser");
+var someMiddleware = require("./middleware/middleware");
+app.use(bodyParser.json());
+app.use("/", someMiddleware.addItem);
 
 
 app.get("/", function (req, res, next) {
-
-	req.send(someObj);
+	console.log(req.body.newSomething)
+	res.send(req.body);
 });
 
 app.listen(8282, function () {
