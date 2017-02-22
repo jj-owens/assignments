@@ -1,0 +1,79 @@
+body {
+	color: whitesmoke;
+	background-image: url(img/grey_wash_wall.png);
+	background-repeat: repeat;
+}
+
+html {
+	letter-spacing: 1px;
+	font-size: 20px;
+}
+
+h1 {
+	margin: auto;
+	text-align: center;
+	color: #f98125;
+	display: inline-block;
+	text-shadow: 1px 1px 1px #000000;
+}
+
+h4 {
+	text-align: center;
+	text-decoration: overline;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #000000;
+}
+
+.headermain {
+	text-align: center;
+	margin: auto;
+}
+
+.hype {
+	display: inline-block;
+	font-size: 80px !important;
+}
+
+.mainSection {
+	background-color: white;
+	background: rgba(0, 0, 0, 0.2);
+	width: 70%;
+	height: 2000px;
+	margin: auto;
+}
+
+.formBox {
+	color: black;
+	background: rgba(255, 255, 255, 1);
+	margin-top: 10%;
+}
+
+.mainForm {
+	width: 70%;
+	margin: auto;
+	text-align: center;
+}
+
+.postButton {
+	margin: 3%;
+	text-align: center;
+}
+
+.itemsBox {
+	margin-top: 5%;
+}
+
+.voteItem {
+	color: black;
+	background-color: white;
+	padding: 1%;
+	text-align: center;
+}
+
+.downvoteBtn {
+	margin: 1%;
+}
+
+.upvoteBtn {
+	margin: 1%;
+}

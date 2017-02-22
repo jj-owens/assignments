@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body ng-controller="MainController">
+	<div class="headermain">
+		<h1>Rock the Vote</h1><span class="hype">!</span>
+	</div>
+
+	<div class="container-fluid mainSection">
+		<h4>Add issues to vote on below</h4>
+		<div class="z-depth-2 formBox">
+			<form action="" class="mainForm">
+				<input type="text" placeholder="Title" ng-model="issue.title">
+				<input type="text" placeholder="Description" ng-model="issue.info">
+				<input type="button" value="Post" class="waves-effect waves-light btn postButton" ng-click="postIssue(issue)">
+			</form>
+		</div>
+		<div class="itemsBox" ng-repeat="post in issueList">
+			<div class="z-depth-2 hoverable flow-text voteItem">
+				<h5>{{post.title}}</h5>
+				<p class="flow-text">{{post.info}}</p>
+				{{post.upvotes}}<a class="btn-floating btn-large waves-effect waves-light blue upvoteBtn" ng-click="upvote(post)"><i class="material-icons">+</i></a>
+				<a class="btn-floating btn-large waves-effect waves-light red downvoteBtn" ng-click="downvote(post)"><i class="material-icons">-</i></a>{{post.downvotes}}
+			</div>
+		</div>
+	</div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-animate.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+<script src="app.js"></script>
+
+</html>
