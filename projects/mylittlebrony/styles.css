@@ -1,0 +1,71 @@
+body {
+	background: url(img/ponypaper.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	height: 1500px;
+}
+
+.inputForm {
+	text-align: center;
+	vertical-align: middle;
+	margin: auto;
+	margin-top: 2%;
+	width: 80%;
+}
+
+.input-field {
+	margin: auto;
+	width: 70%;
+	background-color: papayawhip;
+	color: rebeccapurple;
+	font-size: 20px;
+}
+
+header {
+	text-align: center;
+	margin-top: 4%;
+	font-size: 4em;
+	text-decoration: underline;
+	text-shadow: 1px 1px 1px #000000;
+}
+
+.submitBtn {
+	text-align: center;
+	margin: auto;
+}
+
+.btnContainer {
+	margin-top: 2%;
+	text-align: center;
+}
+
+.card {
+	display: inline-block;
+	margin: 3%;
+	background-color: papayawhip;
+	color: rebeccapurple;
+	padding: 2%;
+	height: 70%;
+}
+
+.card-title {
+	color: white !important;
+	font-size: 32px !important;
+	font-weight: 500 !important;
+	text-shadow: 2px 2px 2px #000000;
+}
+
+.card-image {
+	text-align: center;
+	margin: auto;
+	max-width: 300px;
+	max-height: 300px;
+}
+
+.flexContainer {
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}

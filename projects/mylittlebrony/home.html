@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+<link rel="stylesheet" href="styles.css">
+
+<header>ADD YOUR FAVORITE PONY PIC TO THE COLLECTION BELOW</header>
+<div class="input-field z-depth-4">
+	<form class="inputForm">
+		<input type="text" placeholder="Pony Name" ng-model="form.name">
+		<input type="text" placeholder="Image URL" ng-model="form.imgUrl">
+		<input type="text" placeholder="User Name" ng-model="form.username">
+	</form>
+
+</div>
+<div class="btnContainer">
+	<input type="button" value="Submit" class="submitBtn waves-effect waves-light btn pink" ng-click="submitForm(form)">
+</div>

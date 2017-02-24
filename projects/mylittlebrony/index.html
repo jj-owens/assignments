@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body ng-controller="MainController">
+	<nav>
+		<div class="nav-wrapper pink">
+			<a href="#" class="brand-logo">My Little Brony</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href="#!/home">HOME</a></li>
+				<li><a href="#!/ponies">PONIES</a></li>
+			</ul>
+		</div>
+	</nav>
+	<ng-view></ng-view>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+<script src="app.js"></script>
+<script src="service.js"></script>
+
+</html>
