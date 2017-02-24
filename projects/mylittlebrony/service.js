@@ -16,7 +16,6 @@ angular.module("myApp")
 		};
 		this.getFavList = function () {
 			return $http.get("http://api.vschool.io/jjowens/pony").then(function (response) {
-				console.log(response.data);
 				return response.data;
 			});
 		};
