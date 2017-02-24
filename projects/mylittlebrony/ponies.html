@@ -2,20 +2,42 @@
 <link rel="stylesheet" href="styles.css">
 <div class="flexContainer">
 	<div class="ponyContainer" ng-repeat="pony in ponies">
-		<div class="">
-			<div class="card">
-				<div class="card-image">
-					<img class="cardImage" src="{{pony.imgUrl}}">
-					<span class="card-title">{{pony.name}}</span>
-				</div>
-				<div class="card-content">
-					<p>Submitted by: {{pony.username}}</p>
-				</div>
-				<div class="card-action">
-					<a href="https://en.wikipedia.org/wiki/List_of_My_Little_Pony:_Friendship_Is_Magic_characters#{{pony.name}}">Wiki</a>
-					<input type="button" value="Delete" class="waves-effect waves-light btn pink" ng-click="delBtn(pony._id)">
-				</div>
+		<div class="ponyCard z-depth-5">
+			<h4 class="ponyTitle flow-text">{{pony.name}}</h4>
+			<div class="imgContainer">
+				<img class="cardImage" src="{{pony.imgUrl}}">
 			</div>
+			<h6 class="subtitle">Submitted by: {{pony.username}}</h6>
+			<hr>
+			<a class="wiki" href="https://en.wikipedia.org/wiki/List_of_My_Little_Pony:_Friendship_Is_Magic_characters#{{pony.name}}">WIKI</a>
+			<input type="button" value="Delete" class="waves-effect waves-light btn pink" ng-click="delBtn(pony._id)">
 		</div>
 	</div>
 </div>
+
+
+
+
+
+
+
+<!--
+
+
+
+
+
+
+	<div class="card">
+			<div class="card-image">
+				<img class="cardImage" src="{{pony.imgUrl}}">
+				<span class="card-title">{{pony.name}}</span>
+			</div>
+			<div class="card-content">
+				<p>Submitted by: {{pony.username}}</p>
+			</div>
+			<div class="card-action">
+				<a href="https://en.wikipedia.org/wiki/List_of_My_Little_Pony:_Friendship_Is_Magic_characters#{{pony.name}}">Wiki</a>
+				<input type="button" value="Delete" class="waves-effect waves-light btn pink" ng-click="delBtn(pony._id)">
+			</div>
+		</div>-->

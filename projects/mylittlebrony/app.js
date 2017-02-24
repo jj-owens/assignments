@@ -31,6 +31,9 @@ app.controller("MainController", ["$scope", "$route", "MainService", function ($
 }])
 app.config(function ($routeProvider) {
 	$routeProvider
+		.when("/", {
+			templateUrl: "land.html"
+		})
 		.when("/home", {
 			templateUrl: "home.html"
 		})

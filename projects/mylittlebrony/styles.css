@@ -4,6 +4,7 @@ body {
 	background-size: cover;
 	color: white;
 	height: 1500px;
+	background-attachment: fixed;
 }
 
 .inputForm {
@@ -28,6 +29,8 @@ header {
 	font-size: 4em;
 	text-decoration: underline;
 	text-shadow: 1px 1px 1px #000000;
+	background-color: rgba(0, 255, 255, 0.7);
+	text-shadow: 2px 2px 2px #E85A9D;
 }
 
 .submitBtn {
@@ -40,32 +43,38 @@ header {
 	text-align: center;
 }
 
-.card {
-	display: inline-block;
-	margin: 3%;
+.flexContainer {
+	display: inline-flex;
+	align-items: flex-start;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.ponyCard {
+	display: inline-grid;
 	background-color: papayawhip;
 	color: rebeccapurple;
 	padding: 2%;
-	height: 70%;
-}
-
-.card-title {
-	color: white !important;
-	font-size: 32px !important;
-	font-weight: 500 !important;
-	text-shadow: 2px 2px 2px #000000;
-}
-
-.card-image {
 	text-align: center;
-	margin: auto;
-	max-width: 300px;
-	max-height: 300px;
+	width: 300px;
+	border-radius: 14px;
+	margin: 10px;
 }
 
-.flexContainer {
-	display: inline-flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
+.cardImage {
+	max-width: 80%;
+}
+
+.wiki {
+	margin-right: 10%;
+}
+
+.imgContainer {
+	height: 350px;
+}
+
+h1,
+h2 {
+	background-color: rgba(0, 255, 255, 0.7);
+	text-shadow: 2px 2px 2px #E85A9D;
 }
