@@ -36,17 +36,16 @@ angular.module("myApp", [])
 	}
 	this.postIssue = function (issue) {
 		return $http.post("/vote", issue).then(function (response) {
-			alert("Issue successfully posted!");
 			return self.getIssue();
 		});
 	}
 	this.upvote = function (id) {
-		return $http.post("/vote/upvote/" + id, id).then(function (response) {
+		return $http.put("/vote/upvote/" + id, id).then(function (response) {
 			return self.getIssue();
 		});
 	}
 	this.downvote = function (id) {
-		return $http.post("/vote/downvote/" + id, id).then(function (response) {
+		return $http.put("/vote/downvote/" + id, id).then(function (response) {
 			return self.getIssue();
 		});
 	}
