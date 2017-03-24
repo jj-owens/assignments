@@ -31,3 +31,26 @@ function runCalc(num1, num2, string) {
 }
 
 runCalc(2, 5, "add");
+
+a = 1;
+b = 2;
+
+function add(a, b){
+	return a + b;
+}
+
+add(a, b);
+
+
+function add(a, b){
+	return a + b;
+}
+
+
+add(1, 2)
+
+
+
+
+
+
