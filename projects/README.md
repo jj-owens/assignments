@@ -1,11 +1,6 @@
 Projects  
 ====================
 
-Projects are assignments specifically geared towards testing our ability to demonstrate an understand 
-in a collection of topics. Projects represent a culmination both of topics that have been recently learned 
-as well as those that have already been tested in the past. Passing a project is akin to "earning a merit badge" 
-or "leveling up." As time progresses, the projects become more intense, as they naturally build off of everything 
-we've learned up to the point of the project.
+Projects are specifically geared towards testing my ability to demonstrate an understand a collection of topics. Projects represent a culmination both of topics that have been recently learned as well as those that have already been tested in the past. As time progresses, I will make projects more intense, as they naturally build off of everything I've learned up to the point of the project.
 
-In the beginning, they're typically due in 1 or 2 days. Towards the end of the course, we're usually given 1 to 2 
-weeks to complete a project.  
+In the beginning, they've typically been done in 1 or 2 days. Presently, they can take up to a week or more.  
