@@ -5,10 +5,6 @@ var llamas = [];
 
 app.use(bodyParser.json());
 
-
-
-
-
 app.get("/api/people", function (req, res) {
 	res.send({
 		success: true,

@@ -3,7 +3,8 @@ var app = angular.module("TwitchApp", ["ngRoute"]);
 app.config(function ($routeProvider, $sceDelegateProvider) {
 	$routeProvider
 		.when("/home", {
-			templateUrl: "/main/main.html"
+			templateUrl: "./main/main.html",
+			controller: "mainController"
 		})
 	$sceDelegateProvider.resourceUrlWhitelist(['**']);
 });

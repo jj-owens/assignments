@@ -1,21 +1,20 @@
-<body ng-controller="mainController">
-	<link rel="stylesheet" href="/main/styles.css">
+<link rel="stylesheet" href="/main/styles.css">
 
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<img class="icon" src="/img/18_gamepad_console_game_design_flat_icon-512.png" alt="Controller">
-			</div>
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="/">Home</a></li>
-				<li><a href="#">League of Legends</a></li>
-				<li><a href="#">Blizzard</a></li>
-				<li><a href="#">Steam</a></li>
-			</ul>
-		</div>
-	</nav>
-	<div class="video" ng-repeat="url in userFavorites">
-		<iframe class="vidWindow" src="{{url}}" height="360px" width="640px" frameborder="1" scrolling="no" allowfullscreen="true" autoplay="false"></iframe>
-		<br>
-	</div>
-</body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <img class="icon" src="../img/18_gamepad_console_game_design_flat_icon-512.png" alt="Controller">
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="#">League of Legends</a></li>
+            <li><a href="#">Blizzard</a></li>
+            <li><a href="#">Steam</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="video" ng-repeat="url in userFavorites">
+    <iframe class="vidWindow" src="{{url}}" height="360px" width="640px" frameborder="1" scrolling="no"
+            allowfullscreen="true" autoplay="false"></iframe>
+    <br>
+</div>
