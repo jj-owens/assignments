@@ -4,6 +4,7 @@ var path = require("path");
 var morgan = require("morgan");
 var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
+var config = require("./config");
 
 var port = process.env.PORT || 5000;
 
@@ -15,7 +16,7 @@ app.use("/todo", require("./routes/todoRoutes"));
 // 'public' and we'll let express serve up the static files for us.
 app.use(express.static(path.join(__dirname, "public")));
 
-mongoose.connect("mongodb://localhost/todos", function (err) {
+mongoose.connect(config.database, function (err) {
 	if (err) throw err;
 	console.log("Successfully connected to the database");
 });
