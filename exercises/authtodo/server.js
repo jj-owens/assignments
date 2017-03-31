@@ -5,12 +5,17 @@ var morgan = require("morgan");
 var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
 var config = require("./config");
+var expressJwt = require("express-jwt");
 
 var port = process.env.PORT || 5000;
 
 app.use(morgan("dev"));
 app.use(bodyParser.json());
-app.use("/todo", require("./routes/todoRoutes"));
+app.use("/api/todo", require("./routes/todoRoutes"));
+app.use("/auth", require("./routes/authRoutes"));
+app.use("/api", expressJwt({
+	secret: config.secret
+}));
 
 // When we get to doing the frontend, we'll put it in a folder called
 // 'public' and we'll let express serve up the static files for us.
@@ -19,10 +24,6 @@ app.use(express.static(path.join(__dirname, "public")));
 mongoose.connect(config.database, function (err) {
 	if (err) throw err;
 	console.log("Successfully connected to the database");
-});
-
-app.get("/", function (req, res) {
-	res.send("It's working");
 });
 
 app.listen(port, function () {

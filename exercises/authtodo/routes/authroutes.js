@@ -45,17 +45,18 @@ authRoutes.post("/signup", function (req, res) {
 			success: false,
 			message: "Username already exists, please choose another."
 		});
+		else {
+			var newUser = new User(req.body);
+			newUser.save(function (err, userObj) {
+				if (err) return res.status(500).send(err);
+				res.send({
+					user: userObj,
+					message: "Successfully created new user!"
+				});
+			})
+		}
 	})
-	else {
-		var newUser = new User(req.body);
-		newUser.save(function (err, userObj) {
-			if (err) return res.status(500).send(err);
-			res.send({
-				user: userObj,
-				message: "Successfully created new user!"
-			});
-		})
-	}
+
 })
 
 module.exports = authRoutes;
