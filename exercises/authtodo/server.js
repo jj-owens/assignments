@@ -11,11 +11,11 @@ var port = process.env.PORT || 5000;
 
 app.use(morgan("dev"));
 app.use(bodyParser.json());
-app.use("/api/todo", require("./routes/todoRoutes"));
-app.use("/auth", require("./routes/authRoutes"));
 app.use("/api", expressJwt({
 	secret: config.secret
 }));
+app.use("/api/todo", require("./routes/todoroutes"));
+app.use("/auth", require("./routes/authroutes"));
 
 // When we get to doing the frontend, we'll put it in a folder called
 // 'public' and we'll let express serve up the static files for us.

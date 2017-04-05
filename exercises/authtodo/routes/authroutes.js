@@ -22,7 +22,7 @@ authRoutes.post("/login", function (req, res) {
 				})
 			} else {
 				var token = jwt.sign(user.toObject(), config.secret, {
-					expiresIn: "1h"
+					expiresIn: "24h"
 				});
 				res.send({
 					token: token,
