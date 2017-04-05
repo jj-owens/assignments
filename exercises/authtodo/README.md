@@ -1,0 +1,1 @@
+Setting up auth and backend 'todo' database. Here I practiced setting up authorization/login and adding it to the objects in the database for user specific content.
