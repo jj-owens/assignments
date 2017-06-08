@@ -13,7 +13,7 @@ app.controller("mainController", ["$scope", "indexService", function ($scope, in
 	var username = [];
 	$scope.getUser = function (user) {
 		username.push(user);
-		alert(username + " has been logged in!");
+		alert("Grabbing channels for " + username);
 		indexService.getData(username);
 		$scope.userFavorites = indexService.urlArr;
 	}
